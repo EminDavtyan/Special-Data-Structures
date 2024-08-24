@@ -10,9 +10,15 @@ class Stack:
         self.length = 0
 
     def peek(self):
+        '''
+        Shows the top item of the Stack
+        '''
         return self.top
     
     def push(self, value):
+        '''
+        Add item to top of Stack
+        '''
         new_node = Node(value)
         if not self.top:
             self.top = new_node
@@ -24,6 +30,9 @@ class Stack:
         self.length += 1
 
     def pop(self):
+        '''
+        Pops top item of the Stack
+        '''
         if not self.top:
             return None
         if self.top == self.bottom:
