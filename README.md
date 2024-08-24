@@ -22,3 +22,14 @@ item.peek()
 item.push()
 item.pop()
 ```
+
+
+**Queue**
+```python
+from DataStructures.Queue import Queue
+
+item = Queue()
+item.peek()
+item.enqueue()
+item.dequeue()
+```
