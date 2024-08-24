@@ -28,7 +28,6 @@ class Stack:
             return None
         if self.top == self.bottom:
             self.bottom = None
-        # holdingPointer = self.top
         self.top = self.top.next
         self.length -= 1
 
@@ -40,13 +39,13 @@ class Stack:
             temp = temp.next
         return f'{i}'
     
-s1 = Stack()
-s1.push(1)
-s1.push(2)
-s1.push(3)
-s1.push(20)
-s1.pop()
-s1.pop()
-s1.pop()
-s1.pop()
-print(s1)
+
+if __name__ == '__main__':        
+    s1 = Stack()
+    s1.push(1)
+    s1.push(2)
+    s1.push(3)
+    s1.push(20)
+    s1.peek()
+    s1.pop()
+    print(s1)
